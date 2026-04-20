@@ -15,10 +15,10 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  \   |
 // | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | LCTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | LALT | mo(1) | LSHFT |   | ENT | RSE  | ALT |
+// | LCTRL|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  =   |
+//                    | LALT | mo(1) | LSHFT |   | ENT | SPC | BSPC |
                         bindings = <
    &kp TAB &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
    &kp ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -28,10 +28,10 @@
                 };
                 num_and_funcs {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  -   |
+// | sl(3)| LGUI|     |     |     |     |   |     |     |     |     |  [  |  ]   |
+// |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |   |  F7 |  F8 |  F9 | F10 | F11 | F12  |
+//                    |     |     |     |   | PSCRN| tog(2)|    |
                         bindings = <
    &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp MINUS
    &sl 3  &kp LGUI       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &kp LBKT &kp RBKT
@@ -41,10 +41,10 @@
                 };
                 mouse_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      |     |     | M_UP|     |     |   |     |     |     |     |     |      |
+// | to(0)|     |M_LFT|M_DWN|M_RGT|     |   |SC_DN|LCLK |RCLK |MCLK |SC_UP|      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &trans  &trans       &trans       &mmv MOVE_UP       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
    &to 0  &trans       &mmv MOVE_LEFT       &mmv MOVE_DOWN       &mmv MOVE_RIGHT       &trans         &msc SCRL_DOWN   &mkp LCLK   &mkp RCLK &mkp MCLK    &msc SCRL_UP &trans
@@ -55,10 +55,10 @@
 
                 bluetooth_and_firmware {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      | BT0 | BT1 | BT2 | BT3 | BT4 |   |BTCLR|     |     |     |     |BTCLRA|
+// | to(0)|     |     |     |     |     |   |     |BTNXT|BTPRV|     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    |BOOT |     | RST |   | RST |     | BOOT|
                         bindings = <
    &trans  &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4         &bt BT_CLR   &trans   &trans &trans    &trans &bt BT_CLR_ALL
    &to 0  &trans       &trans       &trans       &trans       &trans         &trans   &bt BT_NXT   &bt BT_PRV &trans    &trans &trans
