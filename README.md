@@ -25,7 +25,7 @@ Accessed by holding mo(1) on the default layer.
 
 ```
   `  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  -
-sl(3)|LGUI |     |     |     |     |   |     |     |     |     |  [  |  ]
+sl(3)|LGUI |     |     |     |     |   | LFT | DWN |  UP | RGT |  [  |  ]
  F1  | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 | F12
                   |     |     |     |   |PSCRN|tog(2)|    |
 ```
